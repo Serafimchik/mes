@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package chat;
+package note_v1;
 
-option go_package = "test/proto";
+option go_package = "github.com/Serafimchik/mes/pkg/note_v1;note_v1";
 
 service ChatService {
     rpc SendMessage(MessageRequest) returns (MessageResponse);
@@ -15,4 +15,3 @@ message MessageRequest {
 message MessageResponse {
     string message = 1;
 }
-
